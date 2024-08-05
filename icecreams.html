@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cakes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: linear-gradient(to right, #ede08d, #f7f3f5);
+        }
+        header {
+            background: linear-gradient(to right, #ede08d, #f7f3f5);
+            color: rgb(19, 18, 18);
+            padding: 1rem;
+            font-size: 2rem;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            padding: 1rem;
+        }
+        .cake-item {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .cake-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.3s ease;
+        }
+        .cake-item:hover img {
+            opacity: 0.3;
+        }
+        .recipe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            padding: 1rem;
+            text-align: left;
+        }
+        .cake-item:hover .recipe {
+            opacity: 1;
+        }
+        .search-bar {
+            margin: 20px 0;
+        }
+        .search-bar input {
+            padding: 10px;
+            width: 50%;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>ICE CREAMS</header>
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search for a recipe...">
+    </div>
+    <div class="container">
+        <div class="cake-item">
+            <img src="https://www.zimero.in/cdn/shop/files/oh-so-vanilla-top-lg_6ddc9b4e-2f19-4361-b7f4-1e24cd78a9ff.jpg?v=1717487306&width=1445" alt="Chocolate Cake">
+            <div class="recipe">
+                <p><strong>Vanilla:</strong>
+
+                    Whisk together heavy cream, milk, sugar, and vanilla extract until the sugar dissolves. Pour the mixture into an ice cream maker and churn according to the manufacturer's instructions. Transfer to a container and freeze until firm before serving.</p>
+            </div>
+        </div>
+        <div class="cake-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqwIKsOr3UMz_Rl8o3ZrEOkDzONOAY3Jhr_A&s" alt="Vanilla Cake">
+            <div class="recipe">
+                <p><strong>Chocolate:</strong>  Whisk together heavy cream, milk, sugar, and vanilla extract until the sugar dissolves. Pour the mixture into an ice cream maker and churn according to the manufacturer's instructions. Transfer to a container and freeze until firm before serving.</p>
+            </div>
+        </div>
+        <div class="cake-item">
+            <img src="https://5.imimg.com/data5/SELLER/Default/2022/11/LC/CF/YD/3180617/butterscotch-ice-cream-flavour.jpg" alt="Red Velvet Cake">
+            <div class="recipe">
+                <p><strong>Butterscoth:</strong>   Whisk together heavy cream, milk, sugar, and vanilla extract until the sugar dissolves. Pour the mixture into an ice cream maker and churn according to the manufacturer's instructions. Transfer to a container and freeze until firm before serving.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="cake-item">
+            <img src="https://as2.ftcdn.net/v2/jpg/01/38/00/65/1000_F_138006502_RqueZ8qoosigOhqPtlEdwd1YAzPjXZsp.jpg" alt="Chocolate Cake">
+            <div class="recipe">
+                <p><strong>Strawberry:</strong>   Whisk together heavy cream, milk, sugar, and vanilla extract until the sugar dissolves. Pour the mixture into an ice cream maker and churn according to the manufacturer's instructions. Transfer to a container and freeze until firm before serving.</p>
+            </div>
+        </div>
+        <div class="cake-item">
+            <img src="https://howtofeedaloon.com/wp-content/uploads/2022/07/blueberry-ice-cream-IG.jpg" alt="Vanilla Cake">
+            <div class="recipe">
+                <p><strong>Blueberry:</strong>  Whisk together heavy cream, milk, sugar, and vanilla extract until the sugar dissolves. Pour the mixture into an ice cream maker and churn according to the manufacturer's instructions. Transfer to a container and freeze until firm before serving.</p>
+            </div>
+        </div>
+        <div class="cake-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ5YKyUrf3XNQgcJT2QH404UjZ75jeA_rIXw&s" alt="Red Velvet Cake">
+            <div class="recipe">
+                <p><strong>Mango:</strong>   Whisk together heavy cream, milk, sugar, and vanilla extract until the sugar dissolves. Pour the mixture into an ice cream maker and churn according to the manufacturer's instructions. Transfer to a container and freeze until firm before serving.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="cake-item">
+            <img src="https://5.imimg.com/data5/SELLER/Default/2024/1/378558202/SV/NU/OG/29075216/malai-kulfi.jpg" alt="Chocolate Cake">
+            <div class="recipe">
+                <p><strong>Kulfi:</strong>   Whisk together heavy cream, milk, sugar, and vanilla extract until the sugar dissolves. Pour the mixture into an ice cream maker and churn according to the manufacturer's instructions. Transfer to a container and freeze until firm before serving.</p>
+            </div>
+        </div>
+        <div class="cake-item">
+            <img src="https://as1.ftcdn.net/v2/jpg/01/63/17/56/1000_F_163175601_ueiHXc7KaKZCkAmuMotPiBIKnZphgwVR.jpg" alt="Vanilla Cake">
+            <div class="recipe">
+                <p><strong>Milk:</strong>   Whisk together heavy cream, milk, sugar, and vanilla extract until the sugar dissolves. Pour the mixture into an ice cream maker and churn according to the manufacturer's instructions. Transfer to a container and freeze until firm before serving.</p>
+            </div>
+        </div>
+        <div class="cake-item">
+            <img src="https://3.imimg.com/data3/AV/QI/MY-4726936/orange-ice-cream-500x500.jpg" alt="Red Velvet Cake">
+            <div class="recipe">
+                <p><strong>Orange:</strong>  Whisk together heavy cream, milk, sugar, and vanilla extract until the sugar dissolves. Pour the mixture into an ice cream maker and churn according to the manufacturer's instructions. Transfer to a container and freeze until firm before serving.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const searchInput = document.getElementById('searchInput');
+        const cakeContainer = document.getElementById('cakeContainer');
+        const cakeItems = document.querySelectorAll('.cake-item');
+
+        searchInput.addEventListener('input', function() {
+            const searchTerm = searchInput.value.toLowerCase();
+            cakeItems.forEach(item => {
+                const recipeText = item.textContent.toLowerCase();
+                if (recipeText.includes(searchTerm)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

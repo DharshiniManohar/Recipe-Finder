@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biryani</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: linear-gradient(to right, #61e293, #f7f3f5);
+        }
+        header {
+            background: linear-gradient(to right, #61e293, #f7f3f5);
+            color: rgb(15, 14, 14);
+            padding: 1rem;
+            font-size: 2rem;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            padding: 1rem;
+        }
+        .cake-item {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .cake-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.3s ease;
+        }
+        .cake-item:hover img {
+            opacity: 0.3;
+        }
+        .recipe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            padding: 1rem;
+            text-align: left;
+        }
+        .cake-item:hover .recipe {
+            opacity: 1;
+        }
+        #search-bar {
+            margin: 1rem 0;
+            padding: 0.5rem;
+            width: 80%;
+            max-width: 400px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>Biriyani</header>
+    <input type="text" id="search-bar" placeholder="Search for biriyani...">
+    <div class="container" id="biriyani-container">
+        <div class="cake-item" data-name="Ambur Biriyani">
+            <img src="https://assets.zeezest.com/blogs/PROD_Id-2078-biryani-recipe-nonveg-regional-banner_1616592141737.jpg" alt="Ambur Biriyani">
+            <div class="recipe">
+                <p><strong>Ambur Biriyani:</strong> Marinate chicken with yogurt and spices, then cook with sautéed onions until done. Layer partially cooked basmati rice over the chicken, adding fried onions, mint, and coriander. Cover and simmer on low heat for 20-25 minutes, then serve.</p>
+            </div>
+        </div>
+        <div class="cake-item" data-name="Malabar Biriyani">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAj2xvbLfFtZkGMCqCNr_FQ11sHDmtKbnWow&s" alt="Malabar Biriyani">
+            <div class="recipe">
+                <p><strong>Malabar Biriyani:</strong> Marinate and cook chicken with yogurt, spices, onions, and tomatoes. Layer partially cooked basmati rice over the chicken with fried onions, mint, and coriander, then dum cook on low heat for 20-25 minutes.</p>
+            </div>
+        </div>
+        <div class="cake-item" data-name="Thalassery Biriyani">
+            <img src="https://as2.ftcdn.net/v2/jpg/06/32/96/75/1000_F_632967567_SHJd5byAzM2JOezD5Y9Crx3fFbUz30mF.jpg" alt="Thalassery Biriyani">
+            <div class="recipe">
+                <p><strong>Thalassery Biriyani:</strong> Marinate and cook chicken with yogurt, spices, onions, and tomatoes. Layer partially cooked basmati rice over the chicken with fried onions, mint, and coriander, then dum cook on low heat for 20-25 minutes.</p>
+            </div>
+        </div>
+        <div class="cake-item" data-name="Dindugal Biriyani">
+            <img src="https://b.zmtcdn.com/data/dish_photos/04a/d35ad4e3aba19c728bf9ef582c59904a.jpg" alt="Dindugal Biriyani">
+            <div class="recipe">
+                <p><strong>Dindugal Biriyani:</strong> Marinate and cook chicken with yogurt, spices, onions, and tomatoes. Layer partially cooked basmati rice over the chicken with fried onions, mint, and coriander, then dum cook on low heat for 20-25 minutes.</p>
+            </div>
+        </div>
+        <div class="cake-item" data-name="Hyderabadi Biriyani">
+            <img src="https://imgmedia.lbb.in/media/2020/05/5ebbf3412b08841c1841b0f6_1589375809619.jpg" alt="Hyderabadi Biriyani">
+            <div class="recipe">
+                <p><strong>Hyderabadi Biriyani:</strong> Marinate and cook chicken with yogurt, spices, onions, and tomatoes. Layer partially cooked basmati rice over the chicken with fried onions, mint, and coriander, then dum cook on low heat for 20-25 minutes.</p>
+            </div>
+        </div>
+        <div class="cake-item" data-name="Mutton Kemma Biriyani">
+            <img src="https://assets.zeezest.com/images/PROD_biryani-nonveg_1625152040013.jpg" alt="Mutton Kemma Biriyani">
+            <div class="recipe">
+                <p><strong>Mutton Kemma Biriyani:</strong> Combine flour, cocoa powder, sugar, buttermilk, and eggs. Add red food coloring, then bake at 350°F (175°C) for 30-35 minutes.</p>
+            </div>
+        </div>
+        <div class="cake-item" data-name="Gilma Biriyani">
+            <img src="https://www.licious.in/blog/wp-content/uploads/2022/08/Shutterstock_1267561108.jpg" alt="Gilma Biriyani">
+            <div class="recipe">
+                <p><strong>Gilma Biriyani:</strong> Marinate chicken with yogurt and spices, then cook with sautéed onions until done. Layer partially cooked basmati rice over the chicken, adding fried onions, mint, and coriander. Cover and simmer on low heat for 20-25 minutes, then serve.</p>
+            </div>
+        </div>
+        <div class="cake-item" data-name="Mutton Dum Biriyani">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyORbtXWo80c7Vd0D-CS6iPNqFwW7A59IiqQ&s" alt="Mutton Dum Biriyani">
+            <div class="recipe">
+                <p><strong>Mutton Dum Biriyani:</strong> Marinate and cook chicken with yogurt, spices, onions, and tomatoes. Layer partially cooked basmati rice over the chicken with fried onions, mint, and coriander, then dum cook on low heat for 20-25 minutes.</p>
+            </div>
+        </div>
+        <div class="cake-item" data-name="Fish Biriyani">
+            <img src="https://bhimavaram.online/image/cache/catalog/BO%20STORES/CHANDRIKA%20BIRYANI%20POINT/CBP015_2-1000x1000.jpg" alt="Fish Biriyani">
+            <div class="recipe">
+                <p><strong>Fish Biriyani:</strong> Marinate and cook chicken with yogurt, spices, onions, and tomatoes. Layer partially cooked basmati rice over the fish with fried onions, mint, and coriander, then dum cook on low heat for 20-25 minutes.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('search-bar').addEventListener('input', function() {
+            const query = this.value.toLowerCase();
+            const biriyaniItems = document.querySelectorAll('.cake-item');
+
+            biriyaniItems.forEach(item => {
+                const name = item.getAttribute('data-name').toLowerCase();
+                if (name.includes(query)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

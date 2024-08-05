@@ -1,0 +1,53 @@
+.order-tracking {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.order-tracking h2 {
+    color: #ff6600;
+}
+
+.order-tracking form {
+    margin-bottom: 20px;
+}
+
+.order-tracking label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.order-tracking input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.order-tracking button {
+    background: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.order-tracking button:hover {
+    background: #e55d00;
+}
+
+#order-details {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+    display: none;
+}

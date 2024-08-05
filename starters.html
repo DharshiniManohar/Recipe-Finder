@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cakes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: linear-gradient(to right, #eaef48, #f7f3f5);
+        }
+        header {
+            background: linear-gradient(to right, #e1e85d, #f7f3f5);
+            color: rgb(21, 19, 19);
+            padding: 1rem;
+            font-size: 2rem;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            padding: 1rem;
+        }
+        .cake-item {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .cake-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.3s ease;
+        }
+        .cake-item:hover img {
+            opacity: 0.3;
+        }
+        .recipe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            padding: 1rem;
+            text-align: left;
+        }
+        .cake-item:hover .recipe {
+            opacity: 1;
+        }
+        .search-bar {
+            margin: 20px 0;
+        }
+        .search-bar input {
+            padding: 10px;
+            width: 50%;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>STARTERS</header>
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search for a recipe...">
+    </div>
+    <div class="container">
+        <div class="cake-item">
+            <img src="https://sattvakitchen.com/wp-content/uploads/2024/04/CHEESE-CORN-BALLS-shutterstock_1910162812-copy.jpg" alt="Chocolate Cake">
+            <div class="recipe">
+                <p><strong>Corn cheese balls:</strong> Corn cheese balls are a delightful snack made by mixing boiled corn kernels, grated cheese, mashed potatoes, and spices. Form the mixture into balls, coat them with breadcrumbs, and deep-fry until golden brown. Serve hot with your favorite dipping sauce.</p>
+            </div>
+        </div>
+        <div class="cake-item">
+            <img src="https://qbuypanda.com/image/cache/catalog/ASQUARE/Chicken%20Manchurian-1000x1000.jpg" alt="Vanilla Cake">
+            <div class="recipe">
+                <p><strong>Gobi Manchurian:</strong>Marinate cauliflower florets in a mixture of flour, cornstarch, and spices, then deep-fry until crispy. Sauté ginger, garlic, and green chilies in a pan, add soy sauce, ketchup, and fried cauliflower, and toss until coated. Garnish with spring onions and serve hot.</p>
+            </div>
+        </div>
+        <div class="cake-item">
+            <img src="https://indianaroma.dk/wp-content/uploads/2023/12/PANEER-PAKORA.png" alt="Red Velvet Cake">
+            <div class="recipe">
+                <p><strong>Paneer-pakora</strong> Paneer pakora is made by dipping paneer cubes in a spiced gram flour (besan) batter. Deep-fry the battered paneer until golden and crispy. Serve hot with chutney or ketchup.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="cake-item">
+            <img src="https://www.spicentice.com/cdn/shop/articles/ALOO_GOBI_from_Lucy_1024x1024_ee07c1cc-957a-4454-8df1-b15cb81e490c_1000x.jpg?v=1552435490" alt="Chocolate Cake">
+            <div class="recipe">
+                <p><strong>Aloo Gobi:</strong>Paneer pakora is made by dipping paneer cubes in a spiced gram flour (besan) batter. Deep-fry the battered paneer until golden and crispy. Serve hot with chutney or ketchup.</p>
+            </div>
+        </div>
+        <div class="cake-item">
+            <img src="https://media.istockphoto.com/id/1488738018/photo/medu-vada-or-medu-vada-with-sambhar-and-coconut-chutney-red-chutney-green-chutney-popular.jpg?s=612x612&w=0&k=20&c=dvWgKhQuw1lfOBxDpR6YFMLSZnWdyqYGV1pvcBt7mZw=" alt="Vanilla Cake">
+            <div class="recipe">
+                <p><strong>Medu Vada:</strong> Medu vada is made by grinding urad dal into a smooth batter, mixing it with spices and herbs, and shaping it into doughnut-like rings. Deep-fry the rings until golden brown and crispy, then serve hot with coconut chutney and sambar.</p>
+            </div>
+        </div>
+        <div class="cake-item">
+            <img src="https://dukaan.b-cdn.net/1000x1000/webp/master/products/paneer-65.cms" alt="Red Velvet Cake">
+            <div class="recipe">
+                <p><strong>Paneer 65:</strong> Combine flour, cocoa powder, sugar, buttermilk, and eggs. Add red food coloring, then bake at 350°F (175°C) for 30-35 minutes.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="cake-item">
+            <img src="https://bonmasala.com/wp-content/uploads/2022/06/pani-puri-recipe.jpg" alt="Chocolate Cake">
+            <div class="recipe">
+                <p><strong>Pani Poori:</strong>Pani poori is made by filling crispy hollow puris with a mixture of spicy tamarind water, chickpeas, potatoes, and chutney. Serve immediately to enjoy the burst of flavors and textures in each bite.</p>
+            </div>
+        </div>
+        <div class="cake-item">
+            <img src="https://bodyfirst.in/cdn/shop/articles/Monsoon_Soups_-_Featured_Image.png?v=1687860164" alt="Vanilla Cake">
+            <div class="recipe">
+                <p><strong>Soup:</strong> Sauté chopped onions, garlic, and mixed vegetables in a pot until softened. Add vegetable broth, season with salt, pepper, and herbs, and simmer until vegetables are tender. Blend partially for a creamy texture or serve as is.</p>
+            </div>
+        </div>
+        <div class="cake-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLsbdctgP35XjkLVeEg2lma5IC0ETlyInoVg&s" alt="Red Velvet Cake">
+            <div class="recipe">
+                <p><strong>Fries:</strong>
+
+                    Cut potatoes into thin strips, soak in cold water, then pat dry. Deep-fry in hot oil until golden and crispy, then drain on paper towels. Season with salt and serve hot with your favorite dipping sauce.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const searchInput = document.getElementById('searchInput');
+        const cakeContainer = document.getElementById('cakeContainer');
+        const cakeItems = document.querySelectorAll('.cake-item');
+
+        searchInput.addEventListener('input', function() {
+            const searchTerm = searchInput.value.toLowerCase();
+            cakeItems.forEach(item => {
+                const recipeText = item.textContent.toLowerCase();
+                if (recipeText.includes(searchTerm)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

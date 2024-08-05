@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+    color: white;
+}
+
+.hero {
+    position: relative;
+    background-image: url('https://au.atpscience.com/cdn/shop/articles/9f1b51f5dbc54c188673ac31f4ac07f3.jpg?v=1646485733');
+    background-size: cover;
+    height: 480px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centered-content {
+    color: white;
+    text-align: center;
+}
+
+.search-container {
+    position: relative;
+    display: inline-block;
+}
+
+#search-bar {
+    width: 50%;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: gray;
+    pointer-events: none;
+}
+
+.topics {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.topic {
+    flex: 1;
+    margin: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.topic a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.topic:hover {
+    background-color: #ddd;
+}
+
+.best-recipes {
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.best-recipes h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.recipe-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.recipe {
+    flex: 1;
+    margin: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.recipe img {
+    width: 100%;
+    height: auto;
+}
+
+.recipe-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.recipe:hover {
+    transform: scale(1.05);
+}
+
+.recipe:hover .recipe-info {
+    opacity: 1;
+}
+.typewriter h2 {
+    overflow: hidden; /* Ensures the text is hidden */
+    border-right: .15em solid orange; /* Creates a cursor effect */
+    white-space: nowrap; /* Prevents text wrapping */
+    margin: 0 auto; /* Centers the text */
+    letter-spacing: .15em; /* Adds spacing between letters */
+    animation: typing 4s steps(40, end), blink .75s step-end infinite; /* Combines typing and blinking animations */
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+@keyframes blink {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+}

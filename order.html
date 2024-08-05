@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Tracking</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <header>
+        <center><h1>Order Tracking</h1></center>
+    </header>
+    <main>
+        <section class="order-tracking">
+            <h2>Find Your Order</h2>
+            <form id="order-form">
+                <label for="order-number">Enter Order Number:</label>
+                <input type="text" id="order-number" name="order-number" required>
+                <button type="submit">Track Order</button>
+            </form>
+
+            <section id="order-details" class="hidden">
+                <h3>Order Details</h3>
+                <p id="order-status">Status: <span id="status"></span></p>
+                <p id="order-items">Items: <span id="items"></span></p>
+                <p id="order-date">Order Date: <span id="date"></span></p>
+                <p id="order-address">Delivery Address: <span id="address"></span></p>
+            </section>
+        </section>
+    </main>
+    
+    <footer>
+        <center><p>&copy; 2024 Delicious Muffin Recipes | Designed with love</p></center>
+    </footer>
+
+    <script src="order.js"></script>
+</body>
+</html>

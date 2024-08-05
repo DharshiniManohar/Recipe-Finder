@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cakes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: linear-gradient(to right, #48efd9, #f7f3f5);
+        }
+        header {
+            background: linear-gradient(to right, #48efd9, #f7f3f5);
+            color: rgb(19, 18, 18);
+            padding: 1rem;
+            font-size: 2rem;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            padding: 1rem;
+        }
+        .cake-item {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .cake-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.3s ease;
+        }
+        .cake-item:hover img {
+            opacity: 0.3;
+        }
+        .recipe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            padding: 1rem;
+            text-align: left;
+        }
+        .cake-item:hover .recipe {
+            opacity: 1;
+        }
+        .search-bar {
+            margin: 20px 0;
+        }
+        .search-bar input {
+            padding: 10px;
+            width: 50%;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>JUICES</header>
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search for a recipe...">
+    </div>
+    <div class="container">
+        <div class="cake-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx0m75Ug5LafWlFBPd0-ihacra5656DmsORA&s" alt="Chocolate Cake">
+            <div class="recipe">
+                <p><strong>Orange Juice:</strong> Cut fresh oranges in half and squeeze them using a juicer. Strain the juice to remove pulp and seeds, then chill and serve.</p>
+            </div>
+        </div>
+        <div class="cake-item">
+            <img src="https://www.yellowblissroad.com/wp-content/uploads/2019/05/Homemade-Lemonade-social.jpg" alt="Vanilla Cake">
+            <div class="recipe">
+                <p><strong>Lemon Juice:</strong> Cut fresh fruit in half and squeeze them using a juicer. Strain the juice to remove pulp and seeds, then chill and serve.</p>
+            </div>
+        </div>
+        <div class="cake-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVeHGbrINx4NlCV7_ICppNXf-ihEFqhu2bKQ&s" alt="Red Velvet Cake">
+            <div class="recipe">
+                <p><strong>Apple Juice:</strong> Cut fresh fruit in half and squeeze them using a juicer. Strain the juice to remove pulp and seeds, then chill and serve.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="cake-item">
+            <img src="data:image/jpeg;base64,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" alt="Chocolate Cake">
+            <div class="recipe">
+                <p><strong>Pomegranate Juice:</strong> Cut fresh fruit in half and squeeze them using a juicer. Strain the juice to remove pulp and seeds, then chill and serve.</p>
+            </div>
+        </div>
+        <div class="cake-item">
+            <img src="https://dymadis.com/upload/images/1000x1000/8693357153714_4.webp" alt="Vanilla Cake">
+            <div class="recipe">
+                <p><strong>Mojito:</strong>Cut fresh fruit in half and squeeze them using a juicer. Strain the juice to remove pulp and seeds, then chill and serve.</p>
+            </div>
+        </div>
+        <div class="cake-item">
+            <img src="https://media.istockphoto.com/id/1370584665/photo/strawberry-juice-in-glass-with-fresh-strawberry-fruit-on-wooden-board.jpg?s=612x612&w=0&k=20&c=g7l1n90H_VQqLeIAL9Cv1aohmhWQjJGixmNozWAMPno=" alt="Red Velvet Cake">
+            <div class="recipe">
+                <p><strong>Strawberry Juice:</strong> Cut fresh fruit in half and squeeze them using a juicer. Strain the juice to remove pulp and seeds, then chill and serve.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="cake-item">
+            <img src="https://media.istockphoto.com/id/1178095232/photo/beetroot-juice.jpg?s=612x612&w=0&k=20&c=GJeOJqyjqqmcgwK1I1QJxpGA0JggRLoG7iTcnK7pcs0=" alt="Chocolate Cake">
+            <div class="recipe">
+                <p><strong>Beetroot Juice:</strong> Cut fresh oranges in half and squeeze them using a juicer. Strain the juice to remove pulp and seeds, then chill and serve.</p>
+            </div>
+        </div>
+        <div class="cake-item">
+            <img src="https://media.istockphoto.com/id/845583110/photo/the-juice-of-melon-with-mint-in-a-glass-jar-on-the-table-hami-melon.jpg?s=612x612&w=0&k=20&c=nSxuPX2awELFL_rIMbffiJK9SiOlBwrOfST-GK1P7WI=" alt="Vanilla Cake">
+            <div class="recipe">
+                <p><strong>Muskmelon Juice:</strong> Cut fresh fruit in half and squeeze them using a juicer. Strain the juice to remove pulp and seeds, then chill and serve.</p>
+            </div>
+        </div>
+        <div class="cake-item">
+            <img src="https://media.istockphoto.com/id/1427995950/photo/watermelon-smoothie-topping-with-fresh-mint-leaves.jpg?s=612x612&w=0&k=20&c=VyxV4LO431Vi4qH_WTfVgmi4jf00iQFo8k9XTrv8ieI=" alt="Red Velvet Cake">
+            <div class="recipe">
+                <p><strong>Watermelon Juice:</strong> Cut fresh fruit in half and squeeze them using a juicer. Strain the juice to remove pulp and seeds, then chill and serve.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const searchInput = document.getElementById('searchInput');
+        const cakeContainer = document.getElementById('cakeContainer');
+        const cakeItems = document.querySelectorAll('.cake-item');
+
+        searchInput.addEventListener('input', function() {
+            const searchTerm = searchInput.value.toLowerCase();
+            cakeItems.forEach(item => {
+                const recipeText = item.textContent.toLowerCase();
+                if (recipeText.includes(searchTerm)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
